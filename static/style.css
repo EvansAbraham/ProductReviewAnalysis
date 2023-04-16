@@ -1,0 +1,142 @@
+/* style.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 200px;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00698C;
+}
+
+.sentiment-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.sentiment-score .emoji {
+  font-size: 48px;
+  margin-right: 10px;
+}
+
+.sentiment-score .score {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  font-size: 36px;
+  color: #ccc;
+  margin-right: 10px;
+}
+
+.star.filled {
+  color: #FFD700;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  textarea {
+    height: 100px;
+    font-size:18px;
+margin-bottom: 10px;
+}
+
+button {
+font-size: 18px;
+padding: 10px;
+}
+
+.sentiment-score {
+font-size: 24px;
+margin-top: 10px;
+}
+
+.sentiment-score .emoji{
+font-size: 36px;
+margin-right: 5px;
+}
+
+.sentiment-score .score {
+font-size: 24px;
+margin-right: 5px;
+}
+
+.stars {
+font-size: 24px;
+}
+
+.star {
+margin-right: 5px;
+}
+}

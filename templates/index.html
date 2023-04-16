@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Review Sentiment Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Product Review Sentiment Analysis</h1>
+    <form method="post" action="/">
+      <label for="review">Enter your product review:</label>
+      <textarea id="review" name="review" required></textarea>
+      <button type="submit">Analyze</button>
+    </form>
+    {% if score is not none %}
+      <div class="sentiment-score">
+        <span class="emoji">{{ emoji }}</span>
+        <span class="score">{{ score }}/5</span>
+        <div class="stars">
+          {% for i in range(1, 6) %}
+            {% if score >= i %}
+              <span class="star filled">&#9733;</span>
+            {% else %}
+              <span class="star">&#9734;</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
